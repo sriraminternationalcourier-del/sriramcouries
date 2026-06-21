@@ -21,6 +21,7 @@ import {
   MessageSquare
 } from 'lucide-react'
 import logoImg from './assets/logo.jpg'
+import packagingImg from './assets/packaging_process.png'
 
 function App() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -66,7 +67,16 @@ _Please send me the best price quote!_`
       return
     }
     
-    // Simulate contact submission
+    const message = `*New Contact Message (Sri Ram International Courier)*
+
+👤 *Name:* ${contactName}
+📧 *Email:* ${contactEmail}
+📝 *Subject:* ${contactSubject || 'General Inquiry'}
+💬 *Message:* ${contactMessage}`
+
+    const whatsappURL = `https://wa.me/917893923372?text=${encodeURIComponent(message)}`
+    window.open(whatsappURL, '_blank')
+    
     setContactSubmitted(true)
     setTimeout(() => {
       setContactSubmitted(false)
@@ -74,7 +84,7 @@ _Please send me the best price quote!_`
       setContactEmail('')
       setContactSubject('')
       setContactMessage('')
-    }, 4000)
+    }, 2000)
   }
 
   const toggleFaq = (index) => {
@@ -438,7 +448,7 @@ _Please send me the best price quote!_`
 
             <div className="about-image-column">
               <div className="about-image-wrap">
-                <img src="/src/assets/packaging_process.png" className="about-image" alt="Careful courier packing process" />
+                <img src={packagingImg} className="about-image" alt="Careful courier packing process" />
                 <div className="about-image-badge">
                   <h3>100%</h3>
                   <span>
