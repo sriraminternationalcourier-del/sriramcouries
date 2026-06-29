@@ -20,7 +20,7 @@ import {
   Sparkles,
   MessageSquare
 } from 'lucide-react'
-import logoImg from './assets/logo.jpg'
+import logoImg from './assets/logo.png'
 import packagingImg from './assets/packaging_process.png'
 
 function App() {
@@ -154,7 +154,7 @@ _Please send me the best price quote!_`
           <div className="top-bar-info">
             <span>
               <MapPin size={14} className="text-secondary" />
-              1-8-510/5, L.B. Nagar, Patigadda, Begumpet, Hyderabad
+              1-8-510/5, L.B.S. Nagar, Patigadda, Begumpet, Hyderabad
             </span>
             <span>
               <Clock size={14} className="text-secondary" />
@@ -176,7 +176,10 @@ _Please send me the best price quote!_`
           <a href="#" className="logo-link" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }) }}>
             <img src={logoImg} className="logo-img" alt="Sri Ram International Courier Logo" />
             <div className="brand-text">
-              <span className="brand-name">Sri Ram</span>
+              <span className="brand-name">
+                <span className="brand-sri">Sri</span>
+                <span className="brand-ram">Ram</span>
+              </span>
               <span className="brand-sub">International Courier</span>
             </div>
           </a>
@@ -210,7 +213,10 @@ _Please send me the best price quote!_`
           <div className="logo-link">
             <img src={logoImg} className="logo-img" alt="Sri Ram Logo" />
             <div className="brand-text" style={{ color: '#fff' }}>
-              <span className="brand-name" style={{ color: '#fff' }}>Sri Ram</span>
+              <span className="brand-name" style={{ color: '#fff' }}>
+                <span className="brand-sri" style={{ color: '#fff' }}>Sri</span>
+                <span className="brand-ram">Ram</span>
+              </span>
               <span className="brand-sub" style={{ color: '#ff5e14' }}>International Courier</span>
             </div>
           </div>
@@ -229,7 +235,7 @@ _Please send me the best price quote!_`
         </ul>
 
         <div className="mobile-nav-footer">
-          <p><strong>Office Address:</strong><br />1-8-510/5, L.B. Nagar, Patigadda, Begumpet, Hyderabad - 500016</p>
+          <p><strong>Office Address:</strong><br />1-8-510/5, L.B.S. Nagar, Patigadda, Begumpet, Hyderabad - 500016</p>
           <p>
             <strong>Call:</strong> <a href="tel:+917893923372" style={{ color: '#fff' }}>+91 78939 23372</a> | <a href="tel:+918106223372" style={{ color: '#fff' }}>+91 81062 23372</a>
           </p>
@@ -701,7 +707,7 @@ _Please send me the best price quote!_`
                   </div>
                   <div className="contact-detail-text">
                     <h5>Office Address</h5>
-                    <p>1-8-510/5, L.B. Nagar, Patigadda, Begumpet, Hyderabad, Telangana - 500016</p>
+                    <p>1-8-510/5, L.B.S. Nagar, Patigadda, Begumpet, Hyderabad, Telangana - 500016</p>
                   </div>
                 </div>
 
@@ -834,7 +840,10 @@ _Please send me the best price quote!_`
               <a href="#" className="logo-link" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }) }}>
                 <img src={logoImg} className="logo-img" alt="Sri Ram Logo" />
                 <div className="brand-text" style={{ color: '#fff' }}>
-                  <span className="brand-name" style={{ color: '#fff' }}>Sri Ram</span>
+                  <span className="brand-name" style={{ color: '#fff' }}>
+                    <span className="brand-sri" style={{ color: '#fff' }}>Sri</span>
+                    <span className="brand-ram">Ram</span>
+                  </span>
                   <span className="brand-sub" style={{ color: '#ff5e14' }}>International Courier</span>
                 </div>
               </a>
@@ -842,7 +851,7 @@ _Please send me the best price quote!_`
                 Providing premium, reliable, and secure worldwide doorstep packaging and courier shipping service from Begumpet, Hyderabad. Connecting you to over 220 countries.
               </p>
               <div className="footer-socials">
-                <a href="https://wa.me/917893923372" target="_blank" className="social-circle-btn">
+                <a href="https://wa.me/917893923372?text=Thank%20you%20for%20contacting%20sri%20ram%20international%20and%20domestic%20courier!%20Please%20let%20us%20know%20how%20we%20can%20help%20you." target="_blank" className="social-circle-btn">
                   <MessageSquare size={16} />
                 </a>
               </div>
@@ -865,7 +874,7 @@ _Please send me the best price quote!_`
               <div className="footer-contact-info">
                 <div className="footer-contact-item">
                   <MapPin size={16} />
-                  <span>1-8-510/5, L.B. Nagar, Patigadda, Begumpet, Hyderabad, Telangana - 500016</span>
+                  <span>1-8-510/5, L.B.S. Nagar, Patigadda, Begumpet, Hyderabad, Telangana - 500016</span>
                 </div>
 
                 <div className="footer-contact-item">
@@ -899,7 +908,7 @@ _Please send me the best price quote!_`
 
       {/* FLOATING WHATSAPP BUTTON */}
       <a 
-        href="https://wa.me/917893923372?text=Hi%2C%20I%20have%20a%20courier%20requirement.%20Please%20connect%20me%20with%20a%20support%20agent." 
+        href="https://wa.me/917893923372?text=Thank%20you%20for%20contacting%20sri%20ram%20international%20and%20domestic%20courier!%20Please%20let%20us%20know%20how%20we%20can%20help%20you." 
         className="floating-whatsapp" 
         target="_blank"
         rel="noopener noreferrer"
