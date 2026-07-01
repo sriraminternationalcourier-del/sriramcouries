@@ -1513,7 +1513,71 @@ button, input, select, textarea {
   .footer-nav-col {
     display: none !important;
   }
+
+  /* Compact & Transparent Glassmorphic Quote Card on Mobile */
+  .hero-section {
+    padding: 40px 0 !important;
+  }
+
+  .quote-card {
+    background-color: rgba(11, 31, 60, 0.4) !important;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+    padding: 16px 20px !important;
+    border-radius: var(--border-radius-md) !important;
+    color: var(--bg-white) !important;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2) !important;
+    text-align: left;
+  }
+
+  .quote-card-header h3 {
+    color: var(--secondary) !important;
+    font-size: 17px !important;
+  }
+
+  .quote-card-header p {
+    color: rgba(255, 255, 255, 0.8) !important;
+    font-size: 12px !important;
+  }
+
+  .form-group label {
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-size: 10px !important;
+    margin-bottom: 2px !important;
+  }
+
+  .quote-card .form-input {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    color: var(--bg-white) !important;
+    height: 38px !important;
+    font-size: 13.5px !important;
+  }
+
+  .quote-card .form-input::placeholder {
+    color: rgba(255, 255, 255, 0.5) !important;
+  }
+
+  .quote-card .form-input:focus {
+    border-color: var(--secondary) !important;
+    background-color: rgba(255, 255, 255, 0.15) !important;
+    box-shadow: 0 0 0 3px rgba(255, 94, 20, 0.2) !important;
+  }
+
+  /* Styling options inside select for readability on dark backgrounds */
+  .quote-card select.form-input option {
+    background-color: var(--primary) !important;
+    color: var(--bg-white) !important;
+  }
+
+  .btn-quote-submit {
+    height: 38px !important;
+    font-size: 13.5px !important;
+    margin-top: 4px !important;
+  }
 }
+
 
 /* MOBILE OVERLAY MENU */
 .mobile-nav-overlay {
